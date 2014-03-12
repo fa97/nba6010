@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>C Mart - Virtual Grocery Shop</title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h3>C Mart - Virtual Grocery Shop</h3>
+ 
+    <div class="container">
+        <div class="row">
+           <div class="col-12 col-md-12">
+            <h4>3a. Add a second table to your database. Make sure it is also non-redundant. 
+                Describe the new table on your a2 page by using the notation of Question 1, and also in English</h4>
+            <p>
+                Order(order_number, product_name, email)
+            </p>
+            <p>
+                Our table consists of 3 columns to capture the order details.
+                <ol>
+                    <li>order_number stores the unique number for this orders</li>
+                    <li>product name stores the name of the product for this order. We allow only one product per order.</li>
+                    <li>email field references the email field of the customer. This field is
+                        used to create a link between the customer table and order table.
+                    </li>
+                </ol>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12">
+            <h4>3b. Write a two-table query. Save it in your database. Describe the new query on your a2 page by   
+      writing it in SQL, and also in English.</h4>
+            <p>
+                We created the following query:
+            </p>
+            <p>
+                SELECT Customer.*, Order.Order_number, Order.Product_name
+                FROM Customer INNER JOIN [Order] ON Customer.email = Order.email where product_name='Apples';
+
+            </p>
+            <p>
+                The above query displays the customer details along with one of the customer order detail where the product that was
+                ordered is "Apples". We link the two tables based on the email address field and ask the query to fetch all fields of
+                customer table and the order_number and product name field of order table.
+            </p>
+            </div>
+        </div>      . 
+    </div>
+   
+</body>
+</html>

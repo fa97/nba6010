@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>C Mart - Virtual Grocery Shop</title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h3>C Mart - Virtual Grocery Shop</h3>
+ 
+    <div class="container">
+        <div class="row">
+           <div class="col-12 col-md-12">
+            <h4>2a. Write a sample query relevant to your business, and save it in your database. 
+                Describe your query on your a2 page by writing your query in SQL, and in English</h4>
+            <p>
+                We created the following query:
+            </p>
+            <p>
+                SELECT * FROM Customer WHERE (((Customer.[state])='NY'));
+            </p>
+            <p>
+                The above query selects all customer whose residential state is NY. It fetches all the columns
+                of the Customer table which is indicated by '*'. If we want only specific columns we can specify 
+                the column names instead of *. The * specifies that all columns of the table be included in the output.
+            </p>
+            
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12">
+            <h4>2b. Create a static data page containing the response to your query. Save it in your folder. 
+                Create a link from your a2 page to your data page.</h4>
+            <p>
+                <a target="_blank" href='assignment2/customers.html'>Click here to see the static data containing the response of the query</a>
+            </p>
+            </div>
+        </div>      . 
+    </div>
+   
+</body>
+</html>
